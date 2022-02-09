@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color: #1f1e25 !important;
+    color: #fff !important;
+}
+
+.banner, .banner .row {
+    height: 100vh;
+    min-height: 600px;
+}
+
+.banner {
+    position: relative;
+    background: #000;
+    overflow: hidden;
+}
+
+.banner h1, .banner .lead {
+    font-weight: 200;
+    color: #fff;
+}
+
+.banner h1 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.banner h1 strong {
+    font-weight: 800;
+}
+
+.letter-spacing {
+    letter-spacing: .2em;
+    font-weight: 300;
+}
+
+.banner:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    opacity: 0.3;
+    background-image: url('/assets/images/IMG_0144.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.navbar.bg-light {
+    background-color: transparent !important;
+    transition: background-color 200ms linear, margin .5s linear;
+}
+
+.navbar .navbar-nav>li>a {
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.navbar .navbar-nav>li>a {
+    padding: 15px 20px !important;
+}
+
+.navbar.bg-light.scrolled {
+    background-color: #26242e !important;
+    transition: background-color 200ms linear, margin 200ms linear;
+}
+
+#skills {
+    width: 70%;
+}
+
+#skills .container {
+    position: relative;
+    height: 100vh;
+}
+
+#about {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+#about .position-relative {
+    height: 100vh;
+    min-height: 600px;
+
+}
+
+#contact {
+    height: 100vh;
+    min-height: 600px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+#experience {
+    height: 100vh;
+    min-height: 600px;
+}
+
+.centered-element {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titleCenter {
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+}
+
+.titleStyle {
+    font-weight: 200;
+    font-size: 30px;
+}
+
+.titleStyle strong {
+    font-weight: 800;
+}
+
+.carouselItem div:first-child {
+    height: 18em;
+
+}
+
+.carouselItem div img {
+    height: 18em;
+    width: 100%;
+    padding: 1em;
+    max-width: 300px;
+    min-height: 300px;
+    margin: auto;
+}
+
+.carouselItem div h2 {
+    font-weight: 800;
+}
+
+.descriptionSkill {
+    height: 5em;
+    position: relative;
+    background: #26242e;
+    color: #fff;
+    margin-top: 1em;
+    border-radius: 10px;
+}
+
+.descriptionSkill h2 {
+    font-weight: 700;
+    width: 100%;
+}
+
+.carouselItem {
+    background: #161616;
+    font-size: 1em;
+    text-align: center;
+    position: relative;
+    margin: 2em -.1em 0 -.1em;
+    transition: margin 2s;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.carouselItem.slick-current+.carouselItem {
+    font-size: 1em;
+    line-height: 100px;
+    text-align: center;
+    box-shadow: 0 0 15px black;
+    z-index: 10;
+    margin-top: 0;
+    transition: margin 2s;
+}
+
+.avatar {
+    width: 100%;
+    box-shadow: 0 0 20px black;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #26242e;
+    color: white;
+    padding-top: 2em;
+    font-weight: 900;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+
+.flip-card-back h2 {
+    font-size: 5em;
+}
+
+.textLight {
+    opacity: .6;
+}
+
+.buttonColorful {
+    border: none;
+    border-radius: 50px;
+    background-color: #5702d7;
+    color: #fff;
+    transition: transform .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.download {
+    border: none;
+    border-radius: 50px;
+    background-color: #413f4e;
+    color: #fff;
+    transition: transform .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+    color: #fff !important;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.buttonColorful:hover {
+    background-color: #4802b1;
+    color: #fff !important;
+    transform: scale(1.1);
+}
+
+.download:hover {
+    background-color: #333333;
+    color: #fff !important;
+    transform: scale(1.1);
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #1f1e25;
+    border: none;
+    padding: 1em;
+    color: #fff;
+}
+
+.fas, .fab {
+    padding: 1em;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .5);
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: transform .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.fas:hover, .fab:hover {
+    transform: scale(1.2);
+}
+
+
+#timeline {
+    display: flex;
+    background-color: #031625;
+}
+
+#timeline:hover .tl-item {
+    width: 23.3333%;
+}
+
+.tl-item {
+    transform: translate3d(0, 0, 0);
+    position: relative;
+    width: 25%;
+    height: 100vh;
+    min-height: 600px;
+    color: #fff;
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+
+.tl-item:before, .tl-item:after {
+    transform: translate3d(0, 0, 0);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tl-item:after {
+    background: rgba(3, 22, 37, 0.85);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.tl-item:before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #161616 75%);
+    z-index: 1;
+    opacity: 0;
+    transform: translate3d(0, 0, 0) translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.tl-item:hover {
+    width: 30% !important;
+}
+
+.tl-item:hover:after {
+    opacity: 0;
+}
+
+.tl-item:hover:before {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) translateY(0);
+    transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+
+.tl-item:hover .tl-content {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.75s ease 0.5s;
+}
+
+.tl-item:hover .tl-bg {
+    filter: grayscale(0);
+}
+
+.tl-content {
+    transform: translate3d(0, 0, 0) translateY(25px);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0 1.618em;
+    top: 55%;
+    opacity: 0;
+}
+
+.tl-content h1 {
+    font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #1779cf;
+    font-size: 1.44rem;
+    font-weight: normal;
+}
+
+.tl-year {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.tl-year p {
+    font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.728rem;
+    margin-bottom: 0;
+}
+
+.tl-bg {
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    transition: filter 0.5s ease;
+    filter: grayscale(100%);
+}
+
+.slick-dotted.slick-slider {
+    padding-top: 6em;
+}
+
+@media (min-width: 768px) {
+    .banner h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .carouselItem {
+        margin: 0 .5em 0 .5em;
+    }
+
+    .carouselItem.slick-current+.carouselItem {
+        box-shadow: none;
+    }
+
+    .slick-dots {
+        bottom: inherit !important;
+    }
+
+    .carouselItem div img {
+        width: 100%;
+        padding: 1em;
+        max-width: 300px;
+        min-height: inherit;
+        height: inherit;
+        margin: auto;
+        padding-top: 30%;
+    }
+
+    .avatar {
+        width: 80%;
+    }
+
+    #about .position-relative {
+        height: inherit;
+    }
+
+    #about .position-relative:first-child {
+        min-height: 400px;
+    }
+
+    .about {
+        width: 80%;
+    }
+
+    .tl-item {
+        transform: translate3d(0, 0, 0);
+        position: relative;
+        width: 50%;
+        height: 50vh;
+        min-height: inherit;
+        color: #fff;
+        overflow: inherit;
+        transition: width 0.5s ease, min-width 0.5s ease, top 0.5s ease;
+    }
+
+    .tl-item:hover {
+
+        min-width: 80vw;
+    }
+
+    #contact {
+        height: 115vh;
+    }
+
+    #contact .col-md-6:first-child {
+        text-align: center;
+    }
+
+    #contact div.row.py-1 {
+        justify-content: center;
+    }
+
+    #experience {
+        height: 50vh;
+        min-height: 410px;
+        max-height: 410px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .tl-item:hover>.tl-year {
+        top: 15%;
+    }
+
+    .tl-item:hover>.tl-content {
+        top: 25%;
+    }
+
+    .tl-item>.tl-content h1 {
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 2px 0;
+    }
+
+    .tl-item:before {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #161616 75%);
+    }
+    .flip-card-back h2{
+        font-size: 3em;
+    }
+}

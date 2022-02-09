@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renan Luquete Cavalcante</title>
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- SlickSliderCSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="/assets/slick-1.8.1/slick/slick-theme.css">
+    <!--MainJS-->
+    <script src="/assets/javascript/main.js"></script>
+    <!-- SweetAlert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
+                <ul class="navbar-nav navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="banner" class="banner">
+        <div class="container">
+            <div class="row intro-text align-items-center justify-content-center">
+                <div class="col-md-10 text-center pt-5">
+                    <h1 class="site-heading site-animate fadeInUp site-animated">Hello, I'm <strong
+                            class="d-block">Renan Luquete Cavalcante</strong></h1>
+                    <strong class="d-block text-white text-uppercase letter-spacing">and this is My Portfolio</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="mx-auto position-relative">
+        <div class="container mb-5">
+            <h2 class="text-center pt-5 titleStyle titleCenter">my <strong>SKILLS</strong></h2>
+            <div class="skillsCarousel centered-element">
+                <div class="carouselItem">
+                    <!-- <div>
+                        <img style="width: 100%;" src="/assets/images/api.png">
+                    </div> -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/assets/images/api.png" alt="Avatar" style="width:100%;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2 class="mt-4">3<br> months</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">API</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/aws.png" alt="">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">Amazon Web Services</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/clean-arch.png" alt="">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">Clean Arch</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/clean-code.png" alt="">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">Clean Code</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/css.png" alt="">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">CSS</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/cypress.png" alt="">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">Cypress</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/datadog.jpg" alt="">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">DataDog</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/gcp.png" alt="">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">Google Cloud Plataform</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/git.png" alt="">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">Git</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/html.png" alt="">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">HTML</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/java.png" alt="">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">Java</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/kibana.png">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">Kibana</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/kotlin.png">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">Kotlin</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/mongodb.png">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">MongoDB</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/mysql.png" alt="">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">MySql</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/new-relic.png" alt="">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">New Relic</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/oauth.png" alt="">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">Oauth</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/restful.jpg" alt="">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">Restful API</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/ruby.png" alt="">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">Ruby</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/springframework.png" alt="">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">Spring Framework</h2>
+                    </div>
+                </div>
+                <div class="carouselItem">
+                    <div>
+                        <img style="width: 100%;" src="/assets/images/tdd.png" alt="">
+                    </div>
+                    <div class="descriptionSkill">
+                        <h2 class="centered-element">Test Driven Development</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="about" class="mx-auto position-relative pb-5 pb-md-0 pt-md-5">
+        <div class="container">
+            <div class="row">
+                <div class=" col-xs-12 col-md-4 position-relative"><img class="avatar centered-element"
+                        src="/assets/images/profilePicture.jpg" alt="profilePicture">
+                </div>
+                <div class="col-xs-12 col-md-8 position-relative">
+                    <div class="centered-element about">
+                        <h2 class="pb-4 titleStyle">about <strong>ME</strong></h2>
+                        <p class="textLight pb-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mi eu nibh lacinia
+                            viverra.
+                            Maecenas id diam non mi accumsan condimentum. Mauris imperdiet elit eu vehicula tempor.
+                            Integer
+                            at
+                            euismod turpis. Donec ipsum nisi, maximus et porttitor posuere, tincidunt pharetra massa.
+                            Praesent
+                            id dictum lorem. In diam magna, congue in quam quis, ullamcorper bibendum urna. In vel
+                            sapien
+                            sed
+                            urna euismod sollicitudin condimentum ut magna. Mauris odio lorem, aliquet non ante non,
+                            mollis
+                            viverra nulla. Nam quis condimentum metus, sit amet volutpat tellus. Sed eget mauris ac
+                            tellus
+                            porta
+                            interdum. Aenean tristique ac dui sit amet fermentum. Praesent consequat lorem quis tellus
+                            consectetur sollicitudin.
+                        </p>
+                        <a class="buttonColorful letter-spacing px-3 px-md-4 py-2" aria-current="page" href="#contact">Hire
+                            Me</a>
+                        <a class="download letter-spacing px-3 px-md-4 py-2" href="">Download CV</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="experience" class="mx-auto position-relative">
+        <section id="timeline">
+
+            <div class="tl-item">
+
+                <div class="tl-bg" style="background-image: url(/assets/images/wesolveit.png)"></div>
+
+                <div class="tl-year">
+                    <p class="f2 heading--sanSerif">2015</p>
+                </div>
+
+                <div class="tl-content">
+                    <h1>We Solve It</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit.</p>
+                </div>
+
+            </div>
+            <div class="tl-item">
+
+                <div class="tl-bg" style="background-image: url(/assets/images/finiciativas.png)"></div>
+
+                <div class="tl-year">
+                    <p class="f2 heading--sanSerif">2016</p>
+                </div>
+
+                <div class="tl-content">
+                    <h1>F-Iniciativas</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit.</p>
+                </div>
+
+            </div>
+
+            <div class="tl-item">
+
+                <div class="tl-bg" style="background-image: url(/assets/images/gft.png)"></div>
+
+                <div class="tl-year">
+                    <p class="f2 heading--sanSerif">2018</p>
+                </div>
+
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">GFT</h1>
+                    <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas
+                        dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla
+                        sed felis. Morbi sed nisl et arcu.</p>
+                </div>
+
+            </div>
+            <div class="tl-item">
+
+                <div class="tl-bg" style="background-image: url(assets/images/serasa.jpg)"></div>
+
+                <div class="tl-year">
+                    <p class="f2 heading--sanSerif">2018</p>
+                </div>
+
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">Serasa Experian</h1>
+                    <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas
+                        dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla
+                        sed felis. Morbi sed nisl et arcu.</p>
+                </div>
+
+            </div>
+
+            <div class="tl-item">
+
+                <div class="tl-bg" style="background-image: url(/assets/images/itau.jpg)"></div>
+
+                <div class="tl-year">
+                    <p class="f2 heading--sanSerif">2019</p>
+                </div>
+
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">Itaú Unibanco</h1>
+                    <p>Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate
+                        neque sit amet varius. Maecenas ac pulvinar nisi. Fusce vitae nunc ultrices, tristique dolor at,
+                        porttitor dolor. Etiam id cursus arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros
+                        odio, egestas quis efficitur vel, pretium sed.</p>
+                </div>
+
+            </div>
+
+            <div class="tl-item">
+
+                <div class="tl-bg" style="background-image: url(/assets/images/mercadolivre.jpg)"></div>
+
+                <div class="tl-year">
+                    <p class="f2 heading--sanSerif">2020</p>
+                </div>
+
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">Mercado Livre</h1>
+                    <p>Suspendisse ac mi at dolor sodales faucibus. Nunc sagittis ornare purus non euismod. Donec
+                        vestibulum efficitur tortor, eget efficitur enim facilisis consequat. Vivamus laoreet laoreet
+                        elit. Ut ut varius metus, bibendum imperdiet ex. Curabitur diam quam, blandit at risus nec,
+                        pulvinar porttitor lorem. Pellentesque dolor elit.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </section>
+    <section id="contact" class="mx-auto position-relative pt-5">
+        <div class="container centered-element">
+            <h2 class="titleStyle text-center pt-5 pt-lg-0 pb-lg-5"><strong>CONTACT </strong>me</h2>
+            <div class="row pt-3">
+                <div class="col-md-6">
+                    <h3 class="titleStyle pb-3 h4">send a <strong>MESSAGE</strong></h3>
+                    <form method="post" id="formEmail">
+                        <div class="row py-1">
+                            <div class="col-11">
+                                <input type="text" placeholder="Your Name">
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col-11">
+                                <input type="text" placeholder="Your Email">
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col-11">
+                                <input type="text" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col-11">
+                                <textarea name="message" id="" cols="30" rows="5" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-11">
+                                <input id="button" class="buttonColorful px-4 py-3 w-50 letter-spacing" type="submit" value="Send">
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-md-6">
+                    <h2 class="titleStyle mt-5 mt-md-0 pb-3 h4"><strong>CONTACT </strong>details</h2>
+
+                    <div class="pb-4">
+                        <!-- <span class="textLight">Email</span><br> -->
+                        <a href="mailto:renanluquete@gmail.com" target="_blank"><i class="fas fa-envelope"></i><span
+                                class="textPurple"> renanluquete@gmail.com</span></a>
+                    </div>
+                    <div class="pb-4">
+                        <a href="https://github.com/renanlcavalcante" target="_blank"><i
+                                class="fab fa-linkedin"></i></i><span class="textPurple">
+                                /renanluquetecavalcante</span></a>
+                    </div>
+                    <div class="pb-4">
+                        <a href="https://www.linkedin.com/in/renanluquetecavalcante/" target="_blank"><i
+                                class="fab fa-github"></i><span class="textPurple"> /renanlcavalcante</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="mx-auto mt-3 text-center mb-0 p-3">
+            <span>
+                made with 💜 by 
+            </span>
+            <a style="color: #886ce4 !important;" href="https://rafaluket.github.io" target="_blank">rafaluket</a>.
+            <br> <i>Copyright © 2022 Renan Luquete.</i>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/assets/slick-1.8.1/slick/slick.min.js"></script>
+
+    <!-- SendMailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('user_xajdBFJZ5k4Mcteu98JKe')
+    </script>
+</body>
+
+</html>
