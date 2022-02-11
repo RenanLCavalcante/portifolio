@@ -56,7 +56,7 @@ body {
     height: 100vh;
     z-index: 1;
     opacity: 0.3;
-    background-image: url('/assets/images/IMG_0144.jpg');
+    background-image: url('../images/IMG_0144.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
