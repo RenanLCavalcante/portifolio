@@ -535,27 +535,27 @@
                     <form method="post" id="formEmail">
                         <div class="row py-1">
                             <div class="col-11">
-                                <input type="text" placeholder="Your Name">
+                                <input type="text" id="client-name" name="client-name" placeholder="Your Name" required>
                             </div>
                         </div>
                         <div class="row py-1">
                             <div class="col-11">
-                                <input type="text" placeholder="Your Email">
+                                <input type="text" id="client-email" name="client-email" placeholder="Your Email" required>
                             </div>
                         </div>
                         <div class="row py-1">
                             <div class="col-11">
-                                <input type="text" placeholder="Subject">
+                                <input type="text" id="client-subject" name="client-subject" placeholder="Subject" required>
                             </div>
                         </div>
                         <div class="row py-1">
                             <div class="col-11">
-                                <textarea name="message" id="" cols="30" rows="5" placeholder="Message"></textarea>
+                                <textarea name="client-message" id="client-message" cols="30" rows="5" placeholder="Message" required></textarea>
                             </div>
                         </div>
                         <div class="row pt-3">
                             <div class="col-11">
-                                <input id="button" class="buttonColorful px-4 py-3 w-50 letter-spacing" type="submit" value="Send">
+                                <input id="btn-send-email" class="buttonColorful px-4 py-3 w-50 letter-spacing" type="submit" value="Send">
                             </div>
                         </div>
                     </form>
@@ -565,18 +565,22 @@
                     <h2 class="titleStyle mt-5 mt-md-0 pb-3 h4"><strong>CONTACT </strong>details</h2>
 
                     <div class="pb-4">
-                        <!-- <span class="textLight">Email</span><br> -->
-                        <a href="mailto:renanluquete@gmail.com" target="_blank"><i class="fas fa-envelope"></i><span
-                                class="textPurple"> renanluquete@gmail.com</span></a>
+                        <a href="mailto:renanluquete@gmail.com" target="_blank">
+                            <i class="fas fa-envelope">
+                            </i><span class="textPurple"> renanluquete@gmail.com</span>
+                        </a>
                     </div>
                     <div class="pb-4">
-                        <a href="https://github.com/renanlcavalcante" target="_blank"><i
-                                class="fab fa-linkedin"></i></i><span class="textPurple">
-                                /renanluquetecavalcante</span></a>
+                        <a href="https://github.com/renanlcavalcante" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            </i><span class="textPurple"> /renanluquetecavalcante</span>
+                        </a>
                     </div>
                     <div class="pb-4">
-                        <a href="https://www.linkedin.com/in/renanluquetecavalcante/" target="_blank"><i
-                                class="fab fa-github"></i><span class="textPurple"> /renanlcavalcante</span></a>
+                        <a href="https://www.linkedin.com/in/renanluquetecavalcante/" target="_blank">
+                            <i class="fab fa-github">
+                            </i><span class="textPurple"> /renanlcavalcante</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -591,10 +595,6 @@
 
     <!-- SendMailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-    <script type="text/javascript">
-        emailjs.init('user_xajdBFJZ5k4Mcteu98JKe')
-    </script>
 </body>
 
 </html>
